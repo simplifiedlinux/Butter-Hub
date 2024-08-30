@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content">
+        <h1>Butter Hub</h1>
+        <a href="https://discord.gg/butterhub" target="_blank">Join Our Discord</a>
+        <div class="hi-box">
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Butter%20V3%20Testers.txt'))("early access")
+            <button class="copy-button" onclick="copyText()">Copy</button>
+        </div>
+    </div>
+
+    <script>
+        function copyText() {
+            const text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Butter%20V3%20Testers.txt'))(\"early access\")";
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Text copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
+

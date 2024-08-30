@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video stays behind the content */
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 30%; /* Move the content upwards */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px; /* Make the title much bigger */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example of a good, clean font */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px; /* Adjusted size to keep balance with larger title */
+    padding: 14px 28px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add some space between the title and button */
+    display: inline-block;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Changes background on hover */
+}
+
+.hi-box {
+    margin-top: 40px; /* Space above the box */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 80%; /* Adjust width to fit content */
+    word-wrap: break-word;
+    text-align: left; /* Align text to the left for better readability */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically within the box */
+    gap: 10px; /* Space between the text and the button */
+    margin-left: auto; /* Center the box in the available space */
+    margin-right: auto;
+}
+
+.copy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
+
